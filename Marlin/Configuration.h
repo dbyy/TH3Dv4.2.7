@@ -28,7 +28,7 @@
 
 //#define ENDER2         // NEEDS TESTING. DO NOT USE UNLESS TH3D SUPPORT SAYS TO.
 //#define ENDER2_PRO     //Requires Motor Adapter Cable from TH3D due to stock connections using 5 pins
-//#define ENDER3
+#define ENDER3                    // fmp 11-jan-'24 actvated
 //#define ENDER3_PRO
 //#define ENDER3_NEO
 //#define ENDER3_MAX
@@ -144,9 +144,9 @@
  * 
  * If you need to change your SERVO pin you can change that with the SERVO0_PIN Line below. Most people do NOT need to change/set this.
  */
-//#define BLTOUCH
+#define BLTOUCH                     // fmp 11-Jan-'24 activated
 //#define SERVO0_PIN PA13
-//#define BLTOUCH_ON_5PIN
+#define BLTOUCH_ON_5PIN             // fmp 11-Jan-'24 activated
 
 /**
  * Custom Probe Offset - EZABL/BLTouch/CRTouch
@@ -184,7 +184,7 @@
   * If the probe is left of the nozzle the offset on X is NEGATIVE
   * If the probe is in front of the nozzle the offset on Y is NEGATIVE
   */
-  #define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
+  #define NOZZLE_TO_PROBE_OFFSET { -41, -3, 0 }              // fmp 11-Jan-'24 from { 10 10, 0}
 #endif
 
 
